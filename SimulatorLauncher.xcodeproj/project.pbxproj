@@ -8,23 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		4D97E9D01D05D73C00FFA14A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D97E9CF1D05D73C00FFA14A /* main.m */; };
+		4D97E9DB1D05D9FE00FFA14A /* FBSimulatorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D97E9DA1D05D9FE00FFA14A /* FBSimulatorControl.framework */; };
+		4D97E9DC1D05DA5700FFA14A /* FBSimulatorControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D97E9DA1D05D9FE00FFA14A /* FBSimulatorControl.framework */; };
+		4D97E9DF1D05DB8600FFA14A /* FBControlCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D97E9DD1D05DB8600FFA14A /* FBControlCore.framework */; };
+		4D97E9E01D05DB8600FFA14A /* XCTestBootstrap.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D97E9DE1D05DB8600FFA14A /* XCTestBootstrap.framework */; };
+		4D97EA091D07585C00FFA14A /* TSSimLaunchApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D97EA081D07585C00FFA14A /* TSSimLaunchApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4D97E9CA1D05D73C00FFA14A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				4D97E9DF1D05DB8600FFA14A /* FBControlCore.framework in CopyFiles */,
+				4D97E9E01D05DB8600FFA14A /* XCTestBootstrap.framework in CopyFiles */,
+				4D97E9DC1D05DA5700FFA14A /* FBSimulatorControl.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D97E9CC1D05D73C00FFA14A /* SimulatorLauncher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimulatorLauncher; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D97E9CF1D05D73C00FFA14A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D97E9D91D05D91200FFA14A /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		4D97E9DA1D05D9FE00FFA14A /* FBSimulatorControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSimulatorControl.framework; path = Carthage/Build/Mac/FBSimulatorControl.framework; sourceTree = "<group>"; };
+		4D97E9DD1D05DB8600FFA14A /* FBControlCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBControlCore.framework; path = Carthage/Build/Mac/FBControlCore.framework; sourceTree = "<group>"; };
+		4D97E9DE1D05DB8600FFA14A /* XCTestBootstrap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTestBootstrap.framework; path = Carthage/Build/Mac/XCTestBootstrap.framework; sourceTree = "<group>"; };
+		4D97EA071D07585C00FFA14A /* TSSimLaunchApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSimLaunchApp.h; sourceTree = "<group>"; };
+		4D97EA081D07585C00FFA14A /* TSSimLaunchApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSimLaunchApp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D97E9DB1D05D9FE00FFA14A /* FBSimulatorControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,10 @@
 		4D97E9C31D05D73C00FFA14A = {
 			isa = PBXGroup;
 			children = (
+				4D97E9DD1D05DB8600FFA14A /* FBControlCore.framework */,
+				4D97E9DE1D05DB8600FFA14A /* XCTestBootstrap.framework */,
+				4D97E9DA1D05D9FE00FFA14A /* FBSimulatorControl.framework */,
+				4D97E9D91D05D91200FFA14A /* Cartfile */,
 				4D97E9CE1D05D73C00FFA14A /* SimulatorLauncher */,
 				4D97E9CD1D05D73C00FFA14A /* Products */,
 			);
@@ -58,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				4D97E9CF1D05D73C00FFA14A /* main.m */,
+				4D97EA071D07585C00FFA14A /* TSSimLaunchApp.h */,
+				4D97EA081D07585C00FFA14A /* TSSimLaunchApp.m */,
 			);
 			path = SimulatorLauncher;
 			sourceTree = "<group>";
@@ -119,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D97E9D01D05D73C00FFA14A /* main.m in Sources */,
+				4D97EA091D07585C00FFA14A /* TSSimLaunchApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +184,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_DYLIB_INSTALL_NAME = "$(EXECUTABLE_PATH)/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -200,6 +224,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_DYLIB_INSTALL_NAME = "$(EXECUTABLE_PATH)/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -209,6 +235,11 @@
 		4D97E9D41D05D73C00FFA14A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_DYLIB_INSTALL_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +247,11 @@
 		4D97E9D51D05D73C00FFA14A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_DYLIB_INSTALL_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +275,7 @@
 				4D97E9D51D05D73C00FFA14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
